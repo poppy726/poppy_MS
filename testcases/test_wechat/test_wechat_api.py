@@ -18,8 +18,8 @@ class TestWechatApi:
         urls = "https://api.weixin.qq.com/cgi-bin/token"
         datas = {
             "grant_type": "client_credential",
-            "appid": "wxb932279ffa5b1f1a",
-            "secret": "fa4fa2bb2cd3b558526bf14312152595"
+            "appid": "",
+            "secret": ""
         }
         res = requests.request("get", url=urls, params=datas)
         TestWechatApi.access_token = res.json()["access_token"]
